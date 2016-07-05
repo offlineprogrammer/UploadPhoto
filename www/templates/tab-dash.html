@@ -2,10 +2,13 @@
   <ion-content class="padding">
     <h2>Upload Photo</h2>
     <p>
-       <div class="item ">
-                    <button class="button  button-block button-balanced button-bold " ng-click="getPhoto()">Photo Library</button>
-                    <button class="button  button-block button-balanced button-bold " ng-click="takePhoto()">Take Photo or Video</button>
-                </div>
+      <div class="item ">
+        <button class="button  button-block button-balanced button-bold " ng-click="getPhoto()">Photo Library</button>
+        <button class="button  button-block button-balanced button-bold " ng-click="takePhoto()">Take Photo or Video</button>
+      </div>
+      <div class="item ">
+        <img class="img-responsive" ng-src="{{ uploadedImage }}" />
+      </div>
     </p>
   </ion-content>
 </ion-view>

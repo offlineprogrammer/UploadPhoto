@@ -47,7 +47,7 @@ angular.module('starter.controllers', [])
         var sourceFileName = sourcePath.substring(sourcePath.lastIndexOf('/') + 1, sourcePath.length);
         sourceFileName = sourceFileName.split('?')[0];
         $cordovaFile.copyFile(sourceDirectory, sourceFileName, cordova.file.dataDirectory, sourceFileName).then(function (success) {
-          $scope.event.image = cordova.file.dataDirectory + sourceFileName;
+          $scope.uploadedImage = cordova.file.dataDirectory + sourceFileName;
         }, function (error) {
           console.log(error);
         });
